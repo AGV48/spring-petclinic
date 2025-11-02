@@ -1,5 +1,3 @@
-#!groovy
-
 pipeline {
   agent none
   stages {
@@ -17,7 +15,7 @@ pipeline {
     stage('Docker Build') {
       agent any
       steps {
-        sh 'docker build -t jilopezv/custom-jenkins:latest .'
+        sh 'docker build -t jilopezv/spring-petclinic:latest .'
       }
     }
   }
